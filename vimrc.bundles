@@ -314,7 +314,7 @@ call plug#end()
             Errors
         endif
     endfunction
-    nnoremap <Leader>s :call ToggleErrors()<cr>
+    nnoremap <Leader>le :call ToggleErrors()<cr>
 
     " ,en ,ep to jump between errors
     function! <SID>LocationPrevious()
