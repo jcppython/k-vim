@@ -393,6 +393,7 @@ function! s:ZoomToggle() abort
     endif
 endfunction
 command! ZoomToggle call s:ZoomToggle()
+" <silent> tells vim to show no message when this key sequence is used.
 nnoremap <silent> <Leader>z :ZoomToggle<CR>
 
 
@@ -414,7 +415,7 @@ cnoremap <C-e> <End>
 
 " 搜索相关
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
+" map <space> /
 " 进入搜索Use sane regexes"
 nnoremap / /\v
 vnoremap / /\v
@@ -654,6 +655,7 @@ endif
 set background=dark
 set t_Co=256
 
+" 设定配色方案
 colorscheme solarized
 " colorscheme molokai
 " colorscheme desert
