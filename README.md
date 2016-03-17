@@ -361,3 +361,5 @@ Blog: [http://www.wklken.me](http://www.wklken.me)
 4. 取消;进入命令行
    -nnoremap ; :
    +" nnoremap ; :"
+5. 提醒代码长度不超过80,在第80列设置一条高亮提示线
+   let &colorcolumn="80"

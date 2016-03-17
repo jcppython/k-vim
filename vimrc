@@ -144,6 +144,8 @@ set showmode
 set scrolloff=7
 
 " set winwidth=79
+" 提醒代码长度不超过80,在第80列设置一条高亮提示线
+let &colorcolumn="80"
 
 " 命令行（在状态行下）的高度，默认为1，这里是2
 set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
