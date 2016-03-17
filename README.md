@@ -349,7 +349,7 @@ Blog: [http://www.wklken.me](http://www.wklken.me)
 
 2013-06-11 于深圳
 
-dev版本
+# dev版本 - 最简配置实现最高效的使用
 1. 注释掉了map <space> /键盘映射
 2. 显示错误开关快捷键由',s'修改为',le'
    -    nnoremap <Leader>s :call ToggleErrors()<cr>
@@ -358,3 +358,6 @@ dev版本
    " kj 替换 Esc
     inoremap kj <Esc>
    +vnoremap kj <Esc>
+4. 取消;进入命令行
+   -nnoremap ; :
+   +" nnoremap ; :"

@@ -403,7 +403,7 @@ noremap L $
 
 
 " Map ; to : and save a million keystrokes 用于快速进入命令行
-nnoremap ; :
+" nnoremap ; :
 
 
 " 命令行模式增强，ctrl - a到行首， -e 到行尾
