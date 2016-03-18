@@ -363,3 +363,19 @@ Blog: [http://www.wklken.me](http://www.wklken.me)
    +" nnoremap ; :"
 5. 提醒代码长度不超过80,在第80列设置一条高亮提示线
    let &colorcolumn="80"
+6. 重新修改了YCM的快捷键定义
+   let g:ycm_goto_buffer_command = 'vertical-split'
+   " nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
+   nnoremap <leader>gi :YcmCompleter GoToInclude<CR>
+   nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+   nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+   nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+7. 关闭F3显示打印字符开关
+8. 添加F3作为completeopt的开关
+   TODO: 完善ToggleCompletePreview()函数
+
+
+
+# 其他
+1. 设置代码风格google.vim / cpp.vim
+http://stackoverflow.com/questions/21863890/loading-google-vim-indent-file-in-vim
