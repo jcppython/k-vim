@@ -374,8 +374,11 @@ Blog: [http://www.wklken.me](http://www.wklken.me)
 8. 添加F3作为completeopt的开关
    TODO: 完善ToggleCompletePreview()函数
 
-
-
 # 其他
 1. 设置代码风格google.vim / cpp.vim
 http://stackoverflow.com/questions/21863890/loading-google-vim-indent-file-in-vim
+
+# 个性化
+markdown渲染插件，suan/vim-instant-markdown 在需要的时候使用
+
+# 添加文件 vim.archive 用于install一些手动放入archive文件夹内的配置

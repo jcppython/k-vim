@@ -29,6 +29,9 @@ call plug#begin('~/.vim/bundle')
 
 " 移动光标到插件名上, 使用'#'快速跳转到每个插件的配置处
 
+" 只用在mac上，调用Dash
+Plug 'rizzatti/dash.vim'
+
 " syntastic
 Plug 'scrooloose/syntastic'
 
@@ -165,10 +168,10 @@ if count(g:bundle_groups, 'markdown')
     Plug 'plasticboy/vim-markdown', {'for': 'md'}
     " https://github.com/suan/vim-instant-markdown
     " npm -g install instant-markdown-d
-    " Plug 'suan/vim-instant-markdown'
-    " let g:instant_markdown_slow = 1
+    Plug 'suan/vim-instant-markdown'
+    let g:instant_markdown_slow = 1
     " let g:instant_markdown_autostart = 0
-    " map <F12> :InstantMarkdownPreview<CR>
+    map <F12> :InstantMarkdownPreview<CR>
 endif
 
 if count(g:bundle_groups, 'golang')

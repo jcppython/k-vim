@@ -35,6 +35,10 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
+if filereadable(expand("~/.vim/vimrc.archives"))
+  source ~/.vim/vimrc.archives
+endif
+
 " ensure ftdetect et al work by including this after the bundle stuff
 filetype plugin indent on
 
@@ -660,8 +664,8 @@ set background=dark
 set t_Co=256
 
 " 设定配色方案
-colorscheme solarized
-" colorscheme molokai
+" colorscheme solarized
+colorscheme molokai
 " colorscheme desert
 
 
