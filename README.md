@@ -382,3 +382,7 @@ http://stackoverflow.com/questions/21863890/loading-google-vim-indent-file-in-vi
 markdown渲染插件，suan/vim-instant-markdown 在需要的时候使用
 
 # 添加文件 vim.archive 用于install一些手动放入archive文件夹内的配置
+
+# TODO
+1. 将vimrc.bundle软链接移除
+2. md-instant-preview 切换buffer生效
