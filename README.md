@@ -373,6 +373,10 @@ Blog: [http://www.wklken.me](http://www.wklken.me)
 7. 关闭F3显示打印字符开关
 8. 添加F3作为completeopt的开关
    TODO: 完善ToggleCompletePreview()函数
+9. 关闭保存文件自动删除多余空格功能, 打开下面下句即可恢复
+   " autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
+
 
 # 其他
 1. 设置代码风格google.vim / cpp.vim
@@ -386,3 +390,5 @@ markdown渲染插件，suan/vim-instant-markdown 在需要的时候使用
 # TODO
 1. 将vimrc.bundle软链接移除
 2. md-instant-preview 切换buffer生效
+
+

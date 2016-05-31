@@ -569,14 +569,15 @@ au BufWinEnter *.php set mps-=<:>
 
 
 
-" 保存python文件时删除多余空格
-fun! <SID>StripTrailingWhitespaces()
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    call cursor(l, c)
-endfun
-autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+" " 保存文件时删除多余空格
+" fun! <SID>StripTrailingWhitespaces()
+"     let l = line(".")
+"     let c = col(".")
+"     %s/\s\+$//e
+"     call cursor(l, c)
+" endfun
+" 下面这句话用于调用上述函数: 保存时自动删除多余空格功能
+" autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 
 " 定义函数AutoSetFileHead，自动插入文件头
