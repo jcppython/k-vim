@@ -76,6 +76,10 @@ set nobackup
 " 关闭交换文件
 set noswapfile
 
+" 与mac共享剪贴板 取消item2 设置中的"Allow clipboard access to terminal apps"
+" 即设置为OFF
+" https://evertpot.com/osx-tmux-vim-copy-paste-clipboard/
+set clipboard=unnamed
 
 " TODO: remove this, use gundo
 " create undo file
