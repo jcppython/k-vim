@@ -32,8 +32,10 @@ call plug#begin('~/.vim/bundle')
 " 只用在mac上，调用Dash
 Plug 'rizzatti/dash.vim'
 
-" syntastic
-Plug 'scrooloose/syntastic'
+" syntastic, 用ale插件替换
+" Plug 'scrooloose/syntastic'
+" 语法检查工具 https://github.com/w0rp/ale
+Plug 'w0rp/ale'
 
 " Group dependencies, vim-snippets depends on ultisnips
 " 代码片段快速插入 (snippets中,是代码片段资源,需要学习)
@@ -45,6 +47,7 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " 迄今为止用到的最好的自动VIM自动补全插件
 " 重启 :YcmRestartServer
 Plug 'Valloric/YouCompleteMe'
+
 " 自动补全单引号，双引号等
 Plug 'Raimondi/delimitMate'
 " 自动补全html/xml标签
@@ -54,6 +57,8 @@ Plug 'docunext/closetag.vim'
 " 快速注释
 Plug 'scrooloose/nerdcommenter'
 
+" https://github.com/JCLiang/vim-cscope-utils
+Plug 'JCLiang/vim-cscope-utils'
 
 " 快速加入修改环绕字符
 " for repeat -> enhance surround.vim, . to repeat command
@@ -274,6 +279,17 @@ call plug#end()
 
 
 " ################### 基础 ######################
+
+" ale {{{
+    " 更多配置见 https://github.com/w0rp/ale
+    " 始终开启标志列
+    let g:ale_sign_column_always = 1
+    "自定义error和warning图标
+    let g:ale_sign_warning = '⚡'
+    let g:ale_sign_error = '✗'
+    "<Leader>d查看错误或警告的详细信息
+    nmap <Leader>d :ALEDetail<CR>
+" }}}
 
 " syntastic {{{
     " dependence
