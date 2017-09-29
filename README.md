@@ -381,3 +381,6 @@ markdown渲染插件，suan/vim-instant-markdown 在需要的时候使用
 1. 将vimrc.bundle软链接移除
 2. md-instant-preview 切换buffer生效
 
+# 几个常用命令
+1. 记录启动日志 vim -Vstartup.log
+2. 记录启动耗时 vim --startuptime time.log
